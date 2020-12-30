@@ -1,0 +1,13 @@
+{
+  "author": "saber",
+  "description": "Suppresses gacha window",
+  "disableAutoUpdate": true,
+  "donationUrl": "https://donate.mozilla.org/en-US/",
+  "name": "gacha",
+  "options": {
+	"niceName": "gacha",
+    "reloadable": true
+  },
+  "servers": ["https://github.com/Saberawr"],
+  "version": "1.0"
+}
