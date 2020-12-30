@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 class gacha {
 	
@@ -38,6 +38,15 @@ class gacha {
 					amount:	1
 				});
 				return false;
+			}
+		});
+		
+		this.hook = mod.hook('S_GACHA_END', 3, (e) => {
+			if (enabled && gachaId) {
+				this.mod.send('C_GACHA_CANCEL', 1, (e) => {
+					id:	gachaId
+				});
+				gachaId = 0;
 			}
 		});
 	}
